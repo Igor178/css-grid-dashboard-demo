@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SB Admin 2 - Dashboard copy</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <nav class="sidebar__navigation">
+          <div class="sidebar__logo">
+            <i class="fas fa-vial fa-x2"></i>
+            <span class="logo">Social Lab <sup>+</sup></span>
+          </div>
+          <ul class="sidebar__menu">
+            <hr class="sidebar__divider" />
+            <li class="sidebar__item">
+              <a class="sidebar__link"
+                ><i class="fas fa-tachometer-alt"></i> Dashboard</a
+              >
+            </li>
+            <hr class="sidebar__divider sidebar__divider--mb" />
+            <div class="sidebar__heading">Interface</div>
+            <li class="sidebar__item">
+              <a class="sidebar__link"
+                ><i class="fas fa-cog"></i>Settings
+                <i class="fas fa-chevron-right sidebar__icon"></i
+              ></a>
+              <ul class="sidebar__dropdown">
+                <div class="sidebar__dropdown-items">
+                  <li class="sidebar__dropdown-item">Account</li>
+                  <li class="sidebar__dropdown-item">Privacy</li>
+                  <li class="sidebar__dropdown-item">Payment</li>
+                </div>
+              </ul>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link"
+                ><i class="fas fa-wrench"></i>Utilities<i
+                  class="fas fa-chevron-right sidebar__icon"
+                ></i
+              ></a>
+              <ul class="sidebar__dropdown">
+                <div class="sidebar__dropdown-items">
+                  <li class="sidebar__dropdown-item">Progress</li>
+                  <li class="sidebar__dropdown-item">Bars</li>
+                </div>
+              </ul>
+            </li>
+            <hr class="sidebar__divider sidebar__divider--mb" />
+            <div class="sidebar__heading">Addons</div>
+            <li class="sidebar__item">
+              <a class="sidebar__link"
+                ><i class="fas fa-folder"></i>Pages<i
+                  class="fas fa-chevron-right sidebar__icon"
+                ></i
+              ></a>
+              <ul class="sidebar__dropdown">
+                <div class="sidebar__dropdown-items">
+                  <li class="sidebar__dropdown-item">About</li>
+                  <li class="sidebar__dropdown-item">Contact</li>
+                  <li class="sidebar__dropdown-item">Pricing</li>
+                  <li class="sidebar__dropdown-item">Report</li>
+                </div>
+              </ul>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link"
+                ><i class="fas fa-chart-area"></i>Charts</a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link"><i class="fas fa-table"></i>Tables</a>
+            </li>
+            <hr class="sidebar__divider sidebar__divider--mb" />
+          </ul>
+        </nav>
+        <div class="sidebar__version">
+          Social Lab - Dashboard
+        </div>
+      </div>
+      <div class="main">
+        <div class="navbar">
+          <i class="fas fa-bars navbar__menu-icon"></i>
+          <form class="navbar__form">
+            <input
+              type="text"
+              class="navbar__input"
+              placeholder="Search for..."
+            />
+            <button class="navbar__button button">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <div class="navbar__item">
+            <i class="fas fa-search navbar__icon fa-search-mobile"></i>
+          </div>
+          <div class="navbar__item">
+            <i class="fas fa-bell navbar__icon"></i>
+            <sup class="badge badge--danger">3</sup>
+          </div>
+          <div class="navbar__item">
+            <i class="fas fa-envelope navbar__icon"></i>
+            <sup class="badge badge--danger">7</sup>
+          </div>
+          <div class="navbar__divider"></div>
+          <div class="navbar__account">
+            <p class="navbar__username">Jackie Chan</p>
+            <i class="fas fa-user-circle fa-2x navbar__avatar"></i>
+          </div>
+        </div>
+        <div class="content">
+          <div class="top">
+            <h1 class="top__title">Social Analytics</h1>
+            <button class="top__button button button--primary">
+              <i class="fas fa-file-download top__icon"></i> Generate Report
+            </button>
+          </div>
+          <div class="dashboard">
+            <div class="dashboard__top">
+              <div class="dashboard__item">
+                <div class="card card--primary card--animate">
+                  <div class="card__body card__body--grid">
+                    <div class="extra">
+                      <h4 class="card__subtitle card__subtitle--primary">
+                        Earnings (monthly)
+                      </h4>
+                      <p
+                        class="card__text card__text--md card__text--bold card__text--dark"
+                      >
+                        $40,000
+                      </p>
+                    </div>
+
+                    <i class="fas fa-calendar fa-2x card__icon"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard__item">
+                <div class="card card--success card--animate">
+                  <div class="card__body card__body--grid">
+                    <div class="extra">
+                      <h4 class="card__subtitle card__subtitle--success">
+                        Earnings (annual)
+                      </h4>
+                      <p
+                        class="card__text card__text--md card__text--bold card__text--dark"
+                      >
+                        $215,000
+                      </p>
+                    </div>
+                    <i class="fas fa-dollar-sign fa-2x card__icon"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard__item">
+                <div class="card card--info card--animate">
+                  <div class="card__body card__body--grid">
+                    <div class="extra">
+                      <h4 class="card__subtitle card__subtitle--info">
+                        Tasks
+                      </h4>
+                      <div class="card__progress">
+                        <p
+                          class="card__text card__text--md card__text--bold card__text--dark"
+                        >
+                          50%
+                        </p>
+                        <div class="progress progress--sm">
+                          <div class="progress__bar progress__bar--info"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <i class="fas fa-tasks fa-2x card__icon"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard__item">
+                <div class="card card--warning card--animate">
+                  <div class="card__body card__body--grid">
+                    <div class="extra">
+                      <h4 class="card__subtitle card__subtitle--warning">
+                        Pending requests
+                      </h4>
+                      <p
+                        class="card__text card__text--md card__text--bold card__text--dark"
+                      >
+                        18
+                      </p>
+                    </div>
+                    <i class="fas fa-comments fa-2x card__icon"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard__bottom">
+              <div class="dashboard__item dashboard__item--col4">
+                <div class="card">
+                  <div class="card__header">
+                    <h3 class="card__heading card__heading--primary">
+                      Earnings Overview
+                    </h3>
+                    <button class="card__button">
+                      <i class="fas fa-ellipsis-v card__icon"></i>
+                    </button>
+                  </div>
+                  <div class="card__body">
+                    <div class="chart">
+                      <div class="ct-chart"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard__item dashboard__item--col2">
+                <div class="card">
+                  <div class="card__header">
+                    <h3 class="card__heading card__heading--primary">
+                      Revenue Sources
+                    </h3>
+                    <button class="card__button">
+                      <i class="fas fa-ellipsis-v card__icon"></i>
+                    </button>
+                  </div>
+                  <div class="card__body">
+                    <div class="card__chart">
+                      <div class="ct-chart-2"></div>
+                      <div class="chart__labels">
+                        <div class="chart__label">
+                          <div class="chart__icon chart__icon--primary"></div>
+                          Direct
+                        </div>
+                        <div class="chart__label">
+                          <div class="chart__icon chart__icon--success"></div>
+                          Social
+                        </div>
+                        <div class="chart__label">
+                          <div class="chart__icon chart__icon--info"></div>
+                          Refferal
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard__item dashboard__item--col3">
+                <div class="dashboard__item-body">
+                  <div class="card">
+                    <div class="card__header">
+                      <h3 class="card__heading card__heading--primary">
+                        Projects
+                      </h3>
+                    </div>
+                    <div class="card__body">
+                      <div class="progress__wrapper progress__wrapper--mb">
+                        <div class="progress__text">
+                          <p>Server Migration</p>
+                          <p>20%</p>
+                        </div>
+                        <div class="progress progress--md">
+                          <div
+                            class="progress__bar progress__bar--primary progress__bar--w20"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="progress__wrapper progress__wrapper--mb">
+                        <div class="progress__text">
+                          <p>Sales Tracking</p>
+                          <p>40%</p>
+                        </div>
+
+                        <div class="progress progress--md">
+                          <div
+                            class="progress__bar progress__bar--danger progress__bar--w40"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="progress__wrapper progress__wrapper--mb">
+                        <div class="progress__text">
+                          <p>Customer Databse</p>
+                          <p>60%</p>
+                        </div>
+
+                        <div class="progress progress--md">
+                          <div
+                            class="progress__bar progress__bar--info progress__bar--w60"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="progress__wrapper progress__wrapper--mb">
+                        <div class="progress__text">
+                          <p>Payout Details</p>
+                          <p>80%</p>
+                        </div>
+
+                        <div class="progress progress--md">
+                          <div
+                            class="progress__bar progress__bar--warning progress__bar--w80"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="progress__wrapper">
+                        <div class="progress__text">
+                          <p>Account Setup</p>
+                          <p>Complete!</p>
+                        </div>
+
+                        <div class="progress progress--md">
+                          <div
+                            class="progress__bar progress__bar--success progress__bar--w100"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card__header">
+                      <h3 class="card__heading card__heading--primary">
+                        Colours
+                      </h3>
+                      <button class="card__button">
+                        <i class="fas fa-ellipsis-v card__icon"></i>
+                      </button>
+                    </div>
+                    <div class="card__body">
+                      <div
+                        class="colour-box colour-box--primary colour-box--mb"
+                      >
+                        <h4 class="colour-box__title">Primary</h4>
+                        <p class="colour-box__hexcode">#121212</p>
+                      </div>
+                      <div class="colour-box colour-box--info colour-box--mb">
+                        <h4 class="colour-box__title">Info</h4>
+                        <p class="colour-box__hexcode">#6200ee</p>
+                      </div>
+                      <div
+                        class="colour-box colour-box--warning colour-box--mb"
+                      >
+                        <h4 class="colour-box__title">Warning</h4>
+                        <p class="colour-box__hexcode">#bb86fc</p>
+                      </div>
+                      <div class="colour-box colour-box--danger colour-box--mb">
+                        <h4 class="colour-box__title">Danger</h4>
+                        <p class="colour-box__hexcode">#b00020</p>
+                      </div>
+                      <div
+                        class="colour-box colour-box--success colour-box--mb"
+                      >
+                        <h4 class="colour-box__title">Success</h4>
+                        <p class="colour-box__hexcode">#03dac6</p>
+                      </div>
+                      <div class="colour-box colour-box--secondary">
+                        <h4 class="colour-box__title">Secondary</h4>
+                        <p class="colour-box__hexcode">#858796</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard__item dashboard__item--col3">
+                <div class="dashboard__item-body">
+                  <div class="card">
+                    <div class="card__header">
+                      <h3 class="card__heading card__heading--primary">
+                        Illustrations
+                      </h3>
+                    </div>
+                    <div class="card__body">
+                      <div class="card__image">
+                        <img
+                          class="img"
+                          src="images/main-img.svg"
+                          alt="Investment charts"
+                        />
+                      </div>
+                      <p class="card__text card__text--mb">
+                        Add some quality, svg illustrations to your project
+                        courtesy of
+                        <span class="text text--info text--bold">unDraw</span>,
+                        a constantly updated collection of beautiful svg images
+                        that you can use completely free and without
+                        attribution!
+                      </p>
+                      <a class="text text--info card__link">
+                        Browse Illustrations on unDraw
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card__header">
+                      <h3 class="card__heading card__heading--primary">
+                        Development Approach
+                      </h3>
+                    </div>
+                    <div class="card__body">
+                      <p class="card__text card__text--mb">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut vel est risus. Sed sodales nulla varius nisi eleifend
+                        pharetra. Fusce ultricies, purus at vehicula placerat,
+                        mi risus varius orci, at ultrices erat justo quis
+                        libero. Maecenas elementum dui eu libero aliquet
+                        sollicitudin a a quam
+                      </p>
+
+                      <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut vel est risus. Sed sodales nulla varius nisi eleifend
+                        pharetra. Fusce ultricies, purus at vehicula placerat,
+                        mi risus varius orci, at ultrices erat justo quis
+                        libero. Maecenas elementum dui eu libero aliquet
+                        sollicitudin a a quam
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card__header">
+                      <h3 class="card__heading card__heading--primary">
+                        Contact Us
+                      </h3>
+                    </div>
+                    <div class="card__body">
+                      <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut vel est risus. Sed sodales nulla varius nisi eleifend
+                        pharetra. Fusce ultricies, purus at vehicula placerat,
+                        mi risus varius orci, at ultrices erat justo quis
+                        libero. Maecenas elementum dui eu libero aliquet
+                        sollicitudin a a quam
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <p class="footer__copyright">Copyright © Social Lab 2020</p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/0fe96fb8ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
