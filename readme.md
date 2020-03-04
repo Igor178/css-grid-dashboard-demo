@@ -1,3 +1,3 @@
-# Gulp Boilerplate
+# Dashboard with CSS grid
 
-A boilerplate for building web projects with Gulp. Uses Gulp 4.x.
+Design = https://startbootstrap.com/previews/sb-admin-2/
