@@ -1,3 +1,4 @@
 # Dashboard with CSS grid
 
-Design = https://startbootstrap.com/previews/sb-admin-2/
+Live https://css-grid-dashboard-demo.netlify.com/
+Design from https://startbootstrap.com/previews/sb-admin-2/
